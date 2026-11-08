@@ -14,7 +14,7 @@ let
     ps.cffi
     ps.click
     ps."dbus-python"
-    ps."kde-material-you-colors"
+    # ps."kde-material-you-colors"
     ps.libsass
     ps.loguru
     ps."material-color-utilities"
@@ -126,6 +126,8 @@ in
       kdePackages.polkit-kde-agent-1  # Polkit authentication agent
       kdePackages.kdialog  # Dialog prompts
       kdePackages.kirigami
+
+      kde-material-you-colors
 
       # Additional Qt support
       libsForQt5.qtgraphicaleffects
