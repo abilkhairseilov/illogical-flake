@@ -4,7 +4,7 @@ inputs:
 
 let
   cfg      = config.programs.illogical-impulse;
-  nurPkgs  = inputs.nur.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+  #nurPkgs  = inputs.nur.legacyPackages.${pkgs.stdenv.hostPlatform.system};
   customPkgs = import ../pkgs { inherit pkgs; };
 in
 {
@@ -12,7 +12,7 @@ in
     home.packages = with pkgs; [
       customPkgs.material-symbols
       rubik
-      nurPkgs.repos.skiletro.gabarito
+      #nurPkgs.repos.skiletro.gabarito
       nerd-fonts.ubuntu
       nerd-fonts.ubuntu-mono
       nerd-fonts.jetbrains-mono
